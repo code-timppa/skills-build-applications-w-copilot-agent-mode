@@ -110,20 +110,42 @@ We'll be using a modern web application stack:
 1. **Introduction**
    - Overview of OctoFit Tracker app concept
    - GitHub Copilot Chat models
+   - Explanation of how GitHub Copilot agent mode simplifies development
 
 2. **Setup of Prerequisites**
    - Setting up GitHub Codespaces
    - Ensure GitHub Copilot and Copilot Chat extensions are up to date
+   - **Install MongoDB**:
+     1. Download MongoDB Community Server from the [official MongoDB website](https://www.mongodb.com/try/download/community).
+     2. Follow the installation instructions for your operating system:
+        - **Windows**: Use the MSI installer and ensure "Install MongoDB as a Service" is selected.
+        - **macOS**: Use Homebrew: `brew tap mongodb/brew && brew install mongodb-community@6.0`.
+        - **Linux**: Follow the [Linux installation guide](https://www.mongodb.com/docs/manual/administration/install-on-linux/).
+     3. Verify the installation by running `mongod --version` in your terminal.
+     4. Start the MongoDB server:
+        - **Windows/macOS**: Run `mongod` in your terminal.
+        - **Linux**: Use the appropriate service command, e.g., `sudo systemctl start mongod`.
+     5. Ensure MongoDB is running by connecting to it with the `mongo` shell or a GUI client like MongoDB Compass.
+
+   - **Start and Verify MongoDB**:
+     1. Start the MongoDB service:
+        - **Windows/macOS**: Open a terminal and run `mongod`.
+        - **Linux**: Use the command `sudo systemctl start mongod`.
+     2. Verify the MongoDB service is running:
+        - Run `mongo` in your terminal to connect to the MongoDB shell.
+        - If successful, you should see a prompt indicating a connection to the MongoDB server.
 
 3. **Rapid Prototyping with GitHub Copilot agent mode**
    - Creating project structure
    - Generating boilerplate code
    - Implementing basic models, serializers, URLs, and views
+   - Demonstrating how Copilot agent mode assists in resolving coding challenges
 
 4. **Building Core Features**
    - Activity logging API
    - Team management
    - Leaderboard functionality
+   - Leveraging Copilot agent mode for debugging and optimization
 
 5. **Frontend and Backend Development**
    - Setting up React components
@@ -131,3 +153,9 @@ We'll be using a modern web application stack:
    - Connecting to backend APIs
    - Python Django business logic
    - MongoDB data layer
+   - Using Copilot agent mode to streamline integration
+
+6. **Testing and Deployment**
+   - Writing test cases with Copilot's assistance
+   - Deploying the application to a cloud environment
+   - Monitoring and iterating based on feedback
